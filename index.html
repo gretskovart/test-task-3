@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Тестовое задание</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+</head>
+<body>
+  <main>
+    <section class="form">
+      <div class="form__inner">
+        <div class="tab">
+          <input type="radio" id="login" name="tabs" class="tab__input" checked />
+          <label for="login" class="tab__label transition">Вход</label>
+          <input type="radio" id="checkin" name="tabs" class="tab__input" />
+          <label for="checkin" class="tab__label transition">Регистрация</label>
+        </div>
+        <div class="form__tab-panel login">
+          <form action="javascript:void(0);" method="POST">
+            <input type="email" class="form__input form__input--email" placeholder="E-mail" />
+            <div class="login__password">
+              <input type="password" class="form__input form__input--password" placeholder="Пароль" />
+              <button type="button" class="login__button">Показать</button>
+            </div>
+            <div class="login__remember-me">
+              <input type="checkbox" name="remember-me" id="remember-me" />
+              <label for="remember-me">Запомнить меня</label>
+            </div>
+            <button type="submit" class="form__submit submit transition">Войти</button>
+            <a href="#" class="login__link">Забыли свой пароль?</a>
+          </form>
+        </div>
+        <div class="form__tab-panel form__checkin checkin">
+          <form action="javascript:void(0);" method="POST">
+            <input type="text" class="form__input form__input--name" placeholder="Введите свое имя" />
+            <input type="email" class="form__input form__input--email" placeholder="Введите свой e-mail" />
+            <input type="password" class="form__input form__input--password" placeholder="Введите свой пароль" />
+            <button type="submit" class="form__submit submit">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/all.js"></script>
+</body>
+</html>
