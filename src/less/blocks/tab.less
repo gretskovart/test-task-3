@@ -1,0 +1,25 @@
+@import "./../variables.less";
+
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  &__label{
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: darken(@font-tab-color, 20%);
+    cursor: pointer;
+  }
+  &__input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:not(:checked) + .tab__label{
+      background: #d2d8d8;
+      color: @font-tab-color;
+    }
+  }
+}

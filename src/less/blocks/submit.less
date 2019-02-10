@@ -1,0 +1,16 @@
+@import "./../variables.less";
+
+.submit{
+  width: 100%;
+  background: @submit-color;
+  border-radius: 2px;
+  border: 1px solid darken(@submit-color, 5%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 14px 0;
+  outline: none;
+  &:hover{
+    background: lighten(@submit-color, 15%);
+  }
+}

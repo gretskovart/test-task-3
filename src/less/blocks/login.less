@@ -1,0 +1,41 @@
+@import "./../variables.less";
+
+.login{
+  &__password{
+    position: relative;
+  }
+  &__button{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 0 10px;
+    height: 19px;
+    background: transparent;
+    border: none;
+    border-left: 2px solid @input-border-color;
+    outline: none;
+    font-size: 12px;
+    &:focus{
+      border-color: darken(@input-border-color, 35%)
+    }
+    &:active{
+      border-color: darken(@input-border-color, 20%)
+    }
+  }
+  &__remember-me{
+    font-size: 11px;
+    margin-bottom: 23px;
+  }
+  &__link{
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

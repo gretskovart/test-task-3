@@ -1,0 +1,60 @@
+@import "./../variables.less";
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7);
+  font-family: 'Open Sans', sans-serif;
+  &__inner{
+    width: 423px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #000;
+  }
+  &__tab-panel{
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    position: relative;
+  }
+  &__checkin{
+    display: none;
+  }
+  &__input{
+    position: relative;
+    width: 319px;
+    border-radius: 2px;
+    padding: 11px 14px 11px 46px;
+    border: 1px solid @input-border-color;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 12px;
+    &:hover{
+      border-color: darken(@input-border-color, 5%);
+    }
+    &:focus{
+      border-color: darken(@input-border-color, 20%);
+    }
+    &--email{
+      background: url('../images/sprite.svg#mail') 3% 50% no-repeat;
+      background-size: 6%;
+    }
+    &--password{
+      background: url('../images/sprite.svg#key') 3% 50% no-repeat;
+      background-size: 6%;
+    }
+    &--name{
+      background: url(../images/sprite.svg#person) 2% 50% no-repeat;
+      background-size: 7%;
+    }
+  }
+  &__warning{
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    margin-top: -18px;
+  }
+}
